@@ -1,0 +1,43 @@
+<div className="container">
+  <h1>Phoneboock</h1>
+  <form action="">
+    <label>
+      Name <br />
+      <input
+        type="text"
+        name="name"
+        pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+        title="Имя может состоять только из букв, апострофа, тире и пробелов. Например Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan и т. п."
+        required
+      />
+    </label>
+    <label>
+      Number <br />
+      <input
+        type="tel"
+        name="number"
+        pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+        title="Номер телефона должен состоять цифр и может содержать пробелы, тире, круглые скобки и может начинаться с +"
+        required
+      />
+    </label>
+    <button type="submit" className="btn">Add contact</button>
+  </form>
+  <div>
+    <h1>Contacts</h1>
+    <div className="filter-container">
+      <label className="filter-lable">
+        Find contacts by name
+        <input className="filter-input" type="text" name="filter" required />
+      </label>
+    </div>
+
+    <ul>
+      <li>
+        <span className="name"> </span>
+        <span className="tel"> </span>
+        <button type="button" className="contact-btn btn">Удалить</button>
+      </li>
+    </ul>
+  </div>
+</div>
