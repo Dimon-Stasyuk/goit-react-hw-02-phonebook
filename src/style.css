@@ -1,0 +1,12 @@
+.container {
+  margin: auto;
+  color: #424c54;
+  padding: 20px;
+  width: 440px;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  color: black;
+}

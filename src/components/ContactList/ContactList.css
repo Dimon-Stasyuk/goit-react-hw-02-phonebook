@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 1px rgba(221, 221, 221, 1);
+  padding: 10px 20px 10px 20px;
+  width: 400px;
+  color: #424c54;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  transition: all 100ms linear;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+.contact-btn {
+  background-color: #ff5d5d;
+  width: 80px;
+  margin-left: auto;
+}
+
+.contact-btn:hover {
+  box-shadow: 0 1px 2px 0 rgb(240 30 30 / 45%),
+    0 1px 3px 1px rgb(240 30 30 / 30%);
+  background-color: #fd3535;
+}
