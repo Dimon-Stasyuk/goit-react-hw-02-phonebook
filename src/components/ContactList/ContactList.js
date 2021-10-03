@@ -26,9 +26,9 @@ const ContactList = ({ contacts, removeContact }) => {
 ContactList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string,
-      number: PropTypes.string,
-      id: PropTypes.string,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
     })
   ),
   removeContact: PropTypes.func,

@@ -46,7 +46,7 @@ class ContactForm extends React.Component {
     return (
       <form action="" onSubmit={onSubmit}>
         <label>
-          Name <br />
+          Name
           <input
             type="text"
             name="name"
@@ -58,7 +58,7 @@ class ContactForm extends React.Component {
           />
         </label>
         <label>
-          Number <br />
+          Number
           <input
             type="tel"
             name="number"
@@ -83,9 +83,9 @@ ContactForm.propTypes = {
   number: PropTypes.string,
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      number: PropTypes.string,
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
     })
   ),
 };

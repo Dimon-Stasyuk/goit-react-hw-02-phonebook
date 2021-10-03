@@ -3,7 +3,8 @@ import "./style.css";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Filter from "./components/Filter/Filter";
 import ContactList from "./components/ContactList/ContactList";
-const shortid = require("shortid");
+// const shortid = require("shortid");
+import shortid from "shortid";
 
 class App extends React.Component {
   state = {
